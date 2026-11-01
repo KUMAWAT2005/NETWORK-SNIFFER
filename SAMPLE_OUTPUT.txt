@@ -1,0 +1,42 @@
+Illustrative output only; addresses and packet values below are examples.
+
+==============================================================================
+BASIC NETWORK SNIFFER | Scapy | Internship Edition
+Interface:      wlan0
+Protocol focus: TCP
+BPF filter:     tcp
+Payload view:   both (up to 32 bytes)
+CSV payloads:   disabled (metadata only)
+Press Ctrl+C to stop. Only monitor traffic you are authorized to inspect.
+==============================================================================
+CSV log:        logs/packets.csv
+
+[2026-10-22T19:30:00+05:30] Packet #1  TCP / IPv4
+  Source:      192.0.2.10
+  Destination: 198.51.100.20
+  Ports: 51000 -> 443
+  TCP flags: S
+  Service hint: HTTPS/TLS or QUIC (common port 443)
+  Payload:     No undecoded Raw layer found
+  Packet size: 60 bytes | Raw-layer bytes: 0 bytes
+------------------------------------------------------------------------------
+
+Capture complete. Packets displayed: 1
+
+==============================================================================
+CAPTURE STATISTICS SUMMARY
+==============================================================================
+Packets captured:       1
+Capture duration:       0.42 seconds
+Average packet rate:    2.38 packets/second
+Total packet size:      60 bytes
+Raw-layer bytes found:  0 bytes
+Packets by protocol:
+  TCP               1
+Packets by network layer:
+  IPv4              1
+Top source addresses:
+  192.0.2.10                                  1 packets
+Top destination addresses:
+  198.51.100.20                               1 packets
+==============================================================================
